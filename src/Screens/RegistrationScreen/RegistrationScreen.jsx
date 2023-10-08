@@ -1,10 +1,11 @@
 import {
   Keyboard,
   KeyboardAvoidingView,
+  Platform,
   TouchableWithoutFeedback,
 } from "react-native";
 import { ContainerRegistration } from "../../components/RegistrationComponents/ContainerRegistration/ContainerRegistration";
-import AddUserPhoto from "../../components/RegistrationComponents/AddUserFoto/AddUserFoto";
+import AddUserPhoto from "../../components/RegistrationComponents/AddUserPhoto/AddUserPhoto";
 import { RegistrationForm } from "../../components/RegistrationComponents/RegistrationForm/RegistrationForm";
 import { TitleRegistration } from "../../components/RegistrationComponents/TitleRegistration/TitleRegistration";
 import { BackgroundContainer } from "../../components/BackgroundContainer/BackgroundContainer";
@@ -14,7 +15,7 @@ const RegistrationScreen = () => {
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
       <KeyboardAvoidingView
         behavior={Platform.OS === "ios" ? "padding" : "height"}
-        keyboardVerticalOffset={150}
+        keyboardVerticalOffset={100}
       >
         <BackgroundContainer>
           <ContainerRegistration>

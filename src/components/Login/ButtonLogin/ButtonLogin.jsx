@@ -1,8 +1,8 @@
 import { StyleSheet, Text, TouchableOpacity } from "react-native";
 
-export const ButtonLogin = () => {
+export const ButtonLogin = ({ onLogin }) => {
   return (
-    <TouchableOpacity type="submit" style={styles.container}>
+    <TouchableOpacity style={styles.container} onPress={onLogin}>
       <Text style={styles.text}>Увійти</Text>
     </TouchableOpacity>
   );

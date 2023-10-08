@@ -1,8 +1,8 @@
-import { StyleSheet, Text, TouchableOpacity } from "react-native";
+import { Button, StyleSheet, Text, TouchableOpacity } from "react-native";
 
-export const ButtonRegistration = () => {
+export const ButtonRegistration = ({ onRegistration }) => {
   return (
-    <TouchableOpacity type="submit" style={styles.container}>
+    <TouchableOpacity style={styles.container} onPress={onRegistration}>
       <Text style={styles.text}>Зареєстуватися</Text>
     </TouchableOpacity>
   );

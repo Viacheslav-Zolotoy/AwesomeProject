@@ -1,9 +1,4 @@
-import {
-  ImageBackground,
-  Keyboard,
-  KeyboardAvoidingView,
-  TouchableWithoutFeedback,
-} from "react-native";
+import { ImageBackground } from "react-native";
 
 const bgImage = require("../../images/PhotoBG.jpg");
 
